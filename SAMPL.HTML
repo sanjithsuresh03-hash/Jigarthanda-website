@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Famous Jigarthanda</title>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto+Slab:wght@700&family=Orbitron:wght@500&display=swap" rel="stylesheet">
+
+<style>
+  
+/* ===== GOLD ANIMATIONS ===== */
+@keyframes goldGlow {
+  0% { opacity: 0.4; }
+  50% { opacity: 0.8; }
+  100% { opacity: 0.4; }
+}
+
+/* ===== BODY ===== */
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  perspective: 1600px;
+  overflow-x: hidden;
+  position: relative;
+  color: #FFD700;
+
+  background:
+    linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.85)),
+    url("https://b.zmtcdn.com/data/pictures/2/20605832/da936151691a4d8e46ca61185e3d7f26.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* ===== GOLD GLOW LAYER ===== */
+body::after {
+  content: "";
+  position: fixed;
+  inset: -30%;
+  background: linear-gradient(
+    120deg,
+    rgba(255,215,0,0.25),
+    rgba(0,0,0,0.1),
+    rgba(255,215,0,0.25)
+  );
+  filter: blur(45px);
+  animation: goldGlow 16s ease-in-out infinite;
+  z-index: -2;
+}
+
+/* ===== TEXT ===== */
+h1, h2, h3, p, a, th, td {
+  color: #FFD700;
+  text-shadow: 0 0 10px rgba(255,215,0,0.6);
+}
+
+h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 56px;
+}
+
+h2 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 42px;
+}
+
+p {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 20px;
+}
+
+/* ===== ITEMS ===== */
+.item {
+  display: inline-block;
+  margin: 20px;
+  padding: 15px;
+  background: rgba(255,255,255,0.15);
+  border-radius: 18px;
+  backdrop-filter: blur(5px);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.item:hover {
+  transform: translateY(-15px) scale(1.06);
+  box-shadow: 0 22px 40px rgba(255,215,0,0.4);
+}
+
+.item img {
+  width: 220px;
+  height: 200px;
+  border-radius: 12px;
+  object-fit: cover;
+  outline: 4px solid #FFD700;
+  box-shadow: 0 0 15px rgba(255,215,0,0.6);
+}
+table {
+  margin: 60px auto;
+  width: 60%;
+  border-collapse: collapse;
+  background: transparent;
+}
+
+th {
+  background: rgba(218,165,32,0.25); /* very light gold */
+  padding: 14px;
+}
+
+td {
+  padding: 12px;
+  font-size: 18px;
+  background: transparent;
+}
+
+.contact {
+  margin: 100px auto;
+  width: 100%;
+  background: transparent;
+  padding: 50px;
+  border-radius: 100px;
+}
+
+</style>
+</head>
+<body>
+
+<h1>Hi Friends</h1>
+<h2>Welcome to Famous Jigarthanda</h2>
+<p>The Authentic Taste of Madurai</p>
+
+<div class="item normal"><h3>Normal Jigarthanda</h3><img src="https://mfjllp.com/wp-content/uploads/2024/07/MFJ-Nuts-Jigarthanda-Images-01.jpg"></div>
+<div class="item normal-parcel"><h3>Normal Jigarthanda Parcel</h3><img src="https://thefamousjigarthanda.com/wp-content/uploads/2022/08/15-300x300.jpg"></div>
+<div class="item special"><h3>Special Jigarthanda</h3><img src="https://i0.wp.com/cookingfromheart.com/wp-content/uploads/2019/04/Jigarthanda-7.jpg"></div>
+<div class="item special-parcel"><h3>Special Jigarthanda Parcel</h3><img src="https://b.zmtcdn.com/data/dish_photos/f39/d3e37d499b7f74b4e2f357a2a0badf39.png"></div>
+<div class="item falooda"><h3>Falooda</h3><img src="https://www.mygingergarlickitchen.com/wp-content/rich-markup-images/4x3/4x3-falooda-recipe.jpg"></div>
+<div class="item rose"><h3>Rose Milk</h3><img src="https://loveisinmytummy.com/wp-content/uploads/2017/06/Rose-Milk-Main.jpg"></div>
+<div class="item badam"><h3>Badam Milk</h3><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGo8jttJx_y8Jl1MzmvvHoKLK8q9S1-ViPYQ&s"></div>
+<div class="item basanthi"><h3>Basanthi</h3><img src="https://i.pinimg.com/736x/c5/4e/23/c54e23ddf94993788963ef9d1f550866.jpg"></div>
+<div class="item basanthi-parcel"><h3>Basanthi Parcel</h3><img src="https://thefamousjigarthanda.com/wp-content/uploads/2022/08/17-300x300.jpg"></div>
+<div class="item cup"><h3>Cup Ice Cream</h3><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYE8COQYxhzAOI4krmRVyv1ZG4PxlWZFzU9A&s"></div>
+<div class="item cone"><h3>Cone Ice Cream</h3><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyM0oAW5qv3voOK-NXPcwYF1M6xzhQMKbydw&s"></div>
+
+<p><b>Here's the making video of Jigarthanda</b></p>
+<a href="https://youtu.be/X6VCkClKx2Q?si=tOiVFRlfKGhgt77K" target="_blank">Go to YouTube</a>
+
+<table>
+<tr><th>Name</th><th>Price (₹)</th></tr>
+<tr><td>Normal Jigarthanda</td><td>40</td></tr>
+<tr><td>Normal Jigarthanda Parcel</td><td>60</td></tr>
+<tr><td>Special Jigarthanda</td><td>70</td></tr>
+<tr><td>Special Jigarthanda Parcel</td><td>90</td></tr>
+<tr><td>Falooda</td><td>120</td></tr>
+<tr><td>Rose Milk</td><td>70</td></tr>
+<tr><td>Badam Milk</td><td>70</td></tr>
+<tr><td>Basanthi</td><td>100</td></tr>   
+<tr><td>Basanthi Parcel</td><td>120</td></tr>
+<tr><td>Cup Ice Cream</td><td>20</td></tr>
+<tr><td>Cone Ice Cream</td><td>30</td></tr>
+</table>
+
+<div class="contact">
+<h2>Contact Us</h2>
+<p><b>Address:</b> 12, South Masi Street, Madurai</p>
+<p><b>Phone:</b> +91 98765 43210</p>
+<p><b>Email:</b> <a href="mailto:famousjigarthanda@gmail.com">famousjigarthanda@gmail.com</a></p>
+</div>
+
+</body>
+</html>
